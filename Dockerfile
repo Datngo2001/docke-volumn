@@ -16,4 +16,8 @@ EXPOSE 80
 # A new container base on this image will be assign a brand new anonymos volumn when it start
 VOLUME [ "/app/feedback" ]
 
+# Declare an anonymos volumn that will not be overided by mouted volumn
+# which was used to contain our code
+VOLUME [ "/app/node_modules" ]
+
 CMD [ "node", "server.js" ]
