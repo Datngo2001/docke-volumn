@@ -20,4 +20,4 @@ VOLUME [ "/app/feedback" ]
 # which was used to contain our code
 VOLUME [ "/app/node_modules" ]
 
-CMD [ "node", "server.js" ]
+CMD [ "npm", "start" ]
