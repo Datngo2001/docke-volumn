@@ -8,7 +8,8 @@ RUN npm install
 
 COPY . /app
 
-EXPOSE 80
+ENV PORT=80
+EXPOSE $PORT
 
 # Map /app/feedback to a volumn in local machine managed by docker 
 # This command will run when the container start up, as same as CMD command
